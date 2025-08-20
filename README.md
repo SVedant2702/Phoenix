@@ -22,7 +22,6 @@ A personal journey to master **Java + DSA**.
 - Java 17
 - VS Code
 - Git & GitHub
-- Kali Linux (for CEH practice)
 
 ---
 _Phoenix will keep rising every single day._
