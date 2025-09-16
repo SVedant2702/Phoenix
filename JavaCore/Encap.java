@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 // Class with encapsulation
-class Person {
+class encap {
     private int age;
     private String name;
 
@@ -34,7 +34,7 @@ class Person {
 public class Encap {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        Person p = new Person();
+        encap p = new encap();
 
         System.out.println("Enter the name:");
         String inputName = sc.next();
