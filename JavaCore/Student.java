@@ -6,10 +6,10 @@ public class Student {
         double percent;
     }
     public static void main(String args[]){
-        Stud x = new Stud();
-        x.name="Ved";
-        x.rno=56;
-        x.percent=56.6;
+        Stud x = new Stud(); //Declaration
+        x.name="Ved";      //|
+        x.rno=56;          //|->Initialization
+        x.percent=56.6;    //|
 
         System.out.println(x.name);
     }
