@@ -10,7 +10,7 @@ public class Student {
         x.name="Ved";      //|
         x.rno=56;          //|->Initialization
         x.percent=56.6;    //|
-
+// x is created as an object here of Stud class
         System.out.println(x.name);
     }
 }
