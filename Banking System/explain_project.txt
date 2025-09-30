@@ -1,0 +1,57 @@
+Here I am going to explain all the details of this project
+This explaination includes:
+    1. Why I wrote it this way.
+    2. Project Overview
+    3. Concepts used
+    4. Code Structure
+
+1. WHY I WROTE THIS WAY:
+    A few days ago when I realized that I've not coded anything for a while. I decided to start
+    all the way from scratch.
+    
+    I chosen Java as a language because I have the same Language to be learnt for TCS upcoming
+    IPA exam.
+
+    I started from all the basic programs in this Phoneix where I eventually started learning for the
+    OOP and decided at the end of this OOP that I should combine a OOP program in banking system.
+
+2. PROJECT OVERVIEW:
+    This is mini concole based Banking System in Java.
+    It demonstrates all four pillars of OOP(Encapsulation, Abstraction, Inheritance, Polymorphism)
+
+    Features:
+        1. Create Savings/Current accounts
+        2. Deposite money
+        3. Withdraw money
+        4. Display accounts
+        5. Uses ArrayList to manage multiple accounts
+
+3. CONCEPTS USED:
+    Abstraction:
+        Defined an interface BankOperations
+        → declares methods (deposit(), withdraw(), displayDetails()) without implementation.
+        Abstract class BankAccount → provides common implementation (deposit(), displayDetails())
+        and leaves withdraw() abstract for subclasses to implement differently.
+    Encapsulation
+        Fields accountNumber, accountHolder, and balance are private/protected.
+        Access is controlled via getters (getAccountNumber(), getBalance()).
+    Inheritance
+        SavingsAccount and CurrentAccount extend BankAccount.
+        They inherit deposit() and displayDetails() methods.
+        They override withdraw() with their own logic (Savings → min balance, Current → overdraft).
+    Polymorphism
+        withdraw() method is overridden in child classes.
+        At runtime, the correct method is called depending on
+        whether it’s a Savings/Current account.
+    Collections
+        Accounts are stored in an ArrayList<BankAccount>.
+        findAccount() method searches the list by account number.
+    Control Flow
+        Menu-driven loop (while(true)) with a switch statement.
+        User picks options → program calls relevant methods (createSa(), doDeposit(), etc.).
+
+4. CODE STRUCTURE
+    Interface (BankOperations) → contract for all accounts.
+    Abstract Class (BankAccount) → common data + methods.
+    Child Classes (SavingsAccount, CurrentAccount) → specialized accounts.
+    Main Class (BankSys) → handles menu, input, and calls business logic.

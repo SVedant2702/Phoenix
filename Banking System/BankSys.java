@@ -39,8 +39,7 @@ abstract class BankAccount implements BankOperations {
     @Override
     public void displayDetails() {
         System.out.println("Account Number: " + accountNumber +
-                           " | Holder: " + accountHolder +
-                           " | Balance: " + balance);
+        " | Holder: " + accountHolder +" | Balance: " + balance);
     }
 }
 
